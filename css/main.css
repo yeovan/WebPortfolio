@@ -1,0 +1,592 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    background-color: rgb(18, 16, 27);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* border line */
+.border-line-side-profile {
+    border-bottom: 1px solid rgb(49, 49, 49);
+    padding-bottom: 20px;
+}
+
+.border-line-information {
+    border-bottom: 1px solid rgb(49, 49, 49);
+    padding-bottom: 20px;
+}
+
+
+/* profile (left side) */
+.left_profile {
+    top: 0;
+    left: 0;
+    position: sticky;
+    width: 300px;
+    height: 300px;
+    width: 20%;
+    height: 100%;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+/* button profile */
+.button_myName {
+    margin-top: 20px;    
+}
+
+.button_myName button {
+    padding: 10px 0;
+    border-radius: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+    width: 100%;
+    background-color: rgb(18, 16, 27);
+    color: rgb(170, 170, 170);
+    border: 1px solid rgb(51, 51, 51);
+}
+
+.button_myName button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* profile */
+.profile_image {
+    margin-top: 20px;
+    margin-bottom: 20px;  
+}
+
+.profile_image img {
+    max-height: 250px;
+    border-radius: 100%;
+}
+
+.myName {
+    color: white;
+    margin-bottom: 20px;
+    
+}
+
+.myName p{
+    color: gray;
+}
+
+.myName .profile_bio {
+    padding-top: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+.profile_information p{
+    color: gray;
+    font-size: 14px;
+}
+
+/* socials */
+.profile_contact h1 {
+    margin: 15px 0;
+    font-size: 14px;
+    color: white;
+}
+
+.social-icons-left-profile {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+
+}
+
+.social-icons-left-profile a {
+    height: 30px;
+    color: gray;
+    cursor: pointer;
+}
+
+
+/* right side (informations) */
+.right_information {
+    width: 60%;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+/* header */
+.right_information header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(18, 16, 27);
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border-bottom: 1px solid rgb(49, 49, 49);
+    z-index: 1000;
+}
+
+.right_information ul {
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.right_information li {
+    padding: 10px;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.right_information li:hover {
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+}
+
+.right_information a {
+    color: white;
+    text-decoration: none;
+}
+
+.right_information a:hover {
+    color: gray;
+}
+
+.right_information .title {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.information {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 3px;
+    padding: 30px 40px;
+    background-color: rgb(7, 6, 10);
+}
+
+.header_image {
+    text-align: center;
+}
+
+.header_image img {
+    max-height: 60px;
+    object-fit: cover;
+}
+
+.information h1 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+.information span {
+    color: blue;
+    font-size: 21px;
+}
+
+.information .resume_view {
+    color: gray;
+    text-transform: uppercase;
+}
+
+.information p {
+    padding-top: 20px;
+    color: white;
+    font-size: 17px;
+    max-width: 500px;
+}
+
+/* hero section */
+.hero_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+.hero_text {
+    color: rgba(255, 238, 0, 0.651);
+}
+
+/* buttons */
+.buttons button {
+    padding: 10px 30px;
+    border-radius: 7px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: black;
+    color: rgb(170, 170, 170);
+    border: 1px solid rgb(51, 51, 51);
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* about experience */
+.about_exp {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.about_exp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about_exp div{
+    display: grid;
+    justify-content: space-evenly;
+    margin: 20px;
+    background-color: rgb(18, 16, 27);
+    transition: all 0.3s;
+    border: 1px solid rgb(51, 51, 51);
+}
+
+.about_exp div:hover {
+    transform: scale(1.05);
+}
+
+/* skill set logo */
+.skill_set {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+    gap: 15px;
+}
+
+.skill_set img {
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 10px;
+    border-bottom: 3px solid gray;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    padding: 5px;
+}
+
+/* PROJECT PAGE */
+.project_list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+}
+
+.project_list div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px 20px;
+    border-radius: 8px;
+    background-color: rgb(18, 16, 27);
+    transition: all 0.3s;
+    opacity: 80%;
+}
+
+.project_item:hover {
+    transform: scale(1.04);
+    border: 1px solid rgb(51, 51, 51);
+    opacity: 100%;
+}
+
+.project_item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid rgb(7, 6, 10);
+}
+
+.project_item button {
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 7px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: black;
+    color: rgb(170, 170, 170);
+    border: 1px solid rgb(51, 51, 51);
+}
+
+.project_item button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.list_description {
+    padding: 20px;
+    display: block;
+    position: relative;
+    text-align: justify;
+}
+
+/* QUIZ SECTION */
+.quiz_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.quiz_card {
+border-radius: 8px;
+overflow: hidden;
+transition: transform 0.3s ease;
+text-align: center;
+opacity: 80%;
+}
+
+.quiz_card:hover {
+transform: scale(1.04);
+border: 1px solid rgb(51, 51, 51);
+opacity: 100%;
+}
+
+.quiz_card img {
+width: 100%;
+display: block;
+height: auto;
+position: relative;
+aspect-ratio: 1/1;
+}
+
+.quiz_name {
+background-color: rgb(18, 16, 27);
+color: white;
+font-weight: bold;
+padding: 10px 0;
+}
+
+.quiz_name p {
+padding: 20px 20px;
+}
+
+/* RESUME SECTION */
+.resume_container {
+    border: 1px solid gray;
+    height: auto;
+    margin: 20px 0;
+}
+
+.resume_image {
+    margin: 20px 50px;
+
+}
+
+/* FOOTER SECTION */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 20px;
+    padding-top: 50px;
+    background: rgb(18, 16, 27);
+    color: #e1d4c2;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.social-icons a:hover {
+    background: white;
+    color: black;
+    transform: scale(1.09);
+}
+
+.footer-text {
+    font-size: 12px;
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    display: block;
+    margin: 50px auto;
+    max-height: 100px;
+}
+
+/* Fade animation keyframes */
+@keyframes fadeInScroll {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes fadeOutScroll {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/* Hidden by default */
+.scroll-fade {
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(20px);
+}
+
+/* Trigger fade-in */
+.scroll-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .left_profile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile_image img{
+        height: 150px;
+    }
+
+    .social-icons-left-profile {
+        justify-content: center;
+    }
+
+    .right_information {
+        padding: 20px;
+    }
+
+    .information {
+        text-align: center;
+    }
+
+    .information h1 {
+        font-size: 18px;
+    }
+
+    .right_information ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .right_information li {
+        font-size: 9px;
+    }
+
+    .about_exp {
+        grid-template-columns: 1fr;
+    }
+
+    .project_list,
+    .quiz_container {
+        grid-template-columns: 1fr;
+    }
+
+    .skill_set {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .buttons {
+        padding: 10px;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .left_profile {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+        margin-right: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .social-icons-left-profile {
+        justify-content: center;
+    }
+
+    .right_information {
+        width: 100%;
+        z-index: 1000%;
+    }
+
+    .right_information ul {
+        justify-content: center;
+    }
+
+    .information p {
+        text-align: justify;
+        color: rgb(172, 172, 172);
+        text-align: justify;
+    }
+
+    .about_exp {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project_list,
+    .quiz_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
