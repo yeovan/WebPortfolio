@@ -296,6 +296,7 @@ main {
     overflow: hidden;
     transition: transform 0.3s ease;
     display: flex;
+    box-shadow: 0 0 20px rgb(18, 16, 27);
     flex-direction: column;
     justify-content: space-between;
 }
