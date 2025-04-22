@@ -338,44 +338,38 @@ main {
 /* QUIZ SECTION */
 .quiz_container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    padding: 0 20px;
-    max-width: 1200px;
-    margin: 30px auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 10px;
 }
 
 .quiz_card {
+    background-color: rgb(18, 16, 27);
+    color: white;
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
-    text-align: center;
-    opacity: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .quiz_card:hover {
     transform: scale(1.04);
     border: 1px solid rgb(51, 51, 51);
-    opacity: 100%;
 }
 
 .quiz_card img {
     width: 100%;
-    display: block;
-    height: auto;
-    position: relative;
-    aspect-ratio: 1/1;
+    height: 180px;
+    object-fit: cover;
 }
 
 .quiz_name {
-    background-color: rgb(18, 16, 27);
-    color: white;
-    font-weight: bold;
-    padding: 10px 0;
-}
-
-.quiz_name p {
-    padding: 20px 20px;
+    padding: 20px;
+    font-size: 12px;
+    line-height: 1.4;
+    flex-grow: 1;
 }
 
 /* RESUME SECTION */
