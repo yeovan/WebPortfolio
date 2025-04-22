@@ -285,7 +285,7 @@ main {
 .project_list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    gap: 40px;
     padding: 10px;
 }
 
@@ -543,7 +543,6 @@ footer {
         position: relative;
         height: 100%;
         width: 100%;
-        padding: 20px;
         margin-right: 0;
         text-align: center;
         align-items: center;
@@ -565,7 +564,6 @@ footer {
     .information p {
         text-align: justify;
         color: rgb(172, 172, 172);
-        text-align: justify;
     }
 
     .about_exp {
