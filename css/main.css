@@ -546,6 +546,7 @@ footer {
         margin-right: 0;
         text-align: center;
         align-items: center;
+        justify-content: center;
     }
 
     .social-icons-left-profile {
