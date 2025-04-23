@@ -385,6 +385,7 @@ footer {
     .left_profile {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     .profile_image img{
@@ -442,6 +443,7 @@ footer {
         margin-right: 0;
         text-align: center;
         align-items: center;
+        justify-content: center;
     }
 
     .social-icons-left-profile {
