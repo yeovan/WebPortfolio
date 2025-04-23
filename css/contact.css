@@ -401,7 +401,7 @@ footer {
 
     .information {
         text-align: center;
-        padding: 10px 20px;
+        padding: 10px 10px;
     }
 
     .information h1 {
@@ -417,27 +417,20 @@ footer {
         font-size: 9px;
     }
 
-    .about_exp {
+    .contact_section {
         grid-template-columns: 1fr;
-    }
-
-    .project_list,
-    .quiz_container {
-        grid-template-columns: 1fr;
-    }
-
-    .skill_set {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .buttons {
-        padding: 10px;
     }
 
     .buttons button {
         width: 100%;
     }
+
+    .contact_section p,
+    .contact_form {
+        padding: 1px 0;
+    }
+
+
 }
 
 @media (max-width: 1024px) {
@@ -463,17 +456,21 @@ footer {
         justify-content: center;
     }
 
+    .information {
+        text-align: center;
+    }
+
     .information p {
         text-align: justify;
         color: rgb(172, 172, 172);
     }
 
-    .about_exp {
-        grid-template-columns: repeat(1, 1fr);
+    .contact_section p,
+    .contact_form {
+        padding: 1px 0;
     }
 
-    .project_list,
-    .quiz_container {
-        grid-template-columns: repeat(1, 1fr);
+    .form_name {
+        flex-direction: column;
     }
 }
