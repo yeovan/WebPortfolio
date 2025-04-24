@@ -392,6 +392,10 @@ footer {
         height: 150px;
     }
 
+    .profile_information p {
+        font-size: 12px;
+    }
+
     .social-icons-left-profile {
         justify-content: center;
     }
@@ -452,6 +456,18 @@ footer {
         justify-content: center;
     }
 
+    .myName {
+        font-size: 12px;
+    }
+
+    .myName .profile_bio {
+        font-size: 12px;
+    }
+
+    .button_myName button {
+        font-size: 12px;
+    }
+
     .social-icons-left-profile {
         justify-content: center;
     }
@@ -463,15 +479,6 @@ footer {
 
     .right_information ul {
         justify-content: center;
-    }
-
-    .information {
-        text-align: center;
-    }
-
-    .information p {
-        text-align: justify;
-        color: rgb(172, 172, 172);
     }
 
     .contact_section p,

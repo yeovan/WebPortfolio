@@ -241,6 +241,7 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
+    padding: 30px 0;
 }
 
 .about_exp img {
@@ -266,7 +267,6 @@ main {
 .skill_set {
     display: flex;
     justify-content: flex-start;
-    padding-top: 20px;
     gap: 15px;
 }
 
@@ -489,6 +489,10 @@ footer {
         height: 150px;
     }
 
+    .profile_information p {
+        font-size: 12px;
+    }
+
     .social-icons-left-profile {
         justify-content: center;
     }
@@ -537,12 +541,18 @@ footer {
         justify-content: center;
     }
 
+    .skill_set img {
+        max-width: 30px;
+        max-height: 30px;
+    }
+
     .buttons {
         padding: 10px;
     }
 
     .buttons button {
         width: 100%;
+        font-size: 12px;
     }
 }
 
@@ -556,6 +566,18 @@ footer {
         text-align: center;
         align-items: center;
         justify-content: center;
+    }
+    
+    .myName {
+        font-size: 12px;
+    }
+
+    .myName .profile_bio {
+        font-size: 12px;
+    }
+
+    .button_myName button {
+        font-size: 12px;
     }
 
     .social-icons-left-profile {
@@ -573,6 +595,7 @@ footer {
 
     .information p {
         color: rgb(172, 172, 172);
+        font-size: 12px;
     }
 
     .about_exp {
