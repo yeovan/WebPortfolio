@@ -82,6 +82,8 @@ main {
 
 .myName h1 {
     text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 5px;
 }
 
 .myName p{
