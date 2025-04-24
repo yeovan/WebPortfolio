@@ -503,7 +503,11 @@ footer {
     }
 
     .information h1 {
-        font-size: 18px;
+        font-size: 14px;
+    }
+
+    .information span {
+        font-size: 14px;
     }
 
     .right_information ul {
@@ -513,6 +517,10 @@ footer {
 
     .right_information li {
         font-size: 9px;
+    }
+
+    .right_information .title {
+        font-size: 12px;
     }
 
     .about_exp {

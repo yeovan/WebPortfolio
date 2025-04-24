@@ -406,7 +406,11 @@ footer {
     }
 
     .information h1 {
-        font-size: 18px;
+        font-size: 14px;
+    }
+
+    .information span {
+        font-size: 14px;
     }
 
     .right_information ul {
@@ -429,6 +433,7 @@ footer {
     .contact_section p,
     .contact_form {
         padding: 1px 0;
+        font-size: 14px;
     }
 
 
@@ -471,6 +476,8 @@ footer {
     .contact_section p,
     .contact_form {
         padding: 1px 0;
+        text-align: start;
+        
     }
 
     .form_name {
