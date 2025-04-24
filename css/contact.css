@@ -78,7 +78,10 @@ main {
 .myName {
     color: white;
     margin-bottom: 20px;
-    
+}
+
+.myName h1 {
+    text-transform: uppercase;
 }
 
 .myName p{
