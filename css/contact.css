@@ -65,11 +65,6 @@ main {
 }
 
 /* profile */
-.profile_image {
-    margin-top: 20px;
-    margin-bottom: 20px;  
-}
-
 .profile_image img {
     max-height: 250px;
     border-radius: 100%;
@@ -78,12 +73,6 @@ main {
 .myName {
     color: white;
     margin-bottom: 20px;
-}
-
-.myName h1 {
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 5px;
 }
 
 .myName p{
@@ -149,7 +138,7 @@ main {
 .right_information li {
     padding: 10px;
     list-style: none;
-    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
     font-size: 12px;
 }
 

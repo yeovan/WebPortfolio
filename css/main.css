@@ -66,11 +66,6 @@ main {
 }
 
 /* profile */
-.profile_image {
-    margin-top: 20px;
-    margin-bottom: 20px;  
-}
-
 .profile_image img {
     max-height: 250px;
     border-radius: 100%;
@@ -79,12 +74,6 @@ main {
 .myName {
     color: white;
     margin-bottom: 20px;
-}
-
-.myName h1 {
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 5px;
 }
 
 .myName p{
@@ -150,7 +139,7 @@ main {
 .right_information li {
     padding: 10px;
     list-style: none;
-    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
     font-size: 12px;
 }
 
@@ -175,7 +164,6 @@ main {
 
 .information {
     border: 1px solid rgb(49, 49, 49);
-    border-radius: 3px;
     padding: 30px 40px;
     background-color: rgb(7, 6, 10);
 }
@@ -205,7 +193,7 @@ main {
 }
 
 .information p {
-    color: white;
+    color: gray;
     margin: 20px 0;
     font-size: 16px;
     font-style: italic;
@@ -285,6 +273,39 @@ main {
     padding: 5px;
 }
 
+/* resume section */
+.resume_container {
+    margin: 20px 20px;
+    background-color: rgb(18, 16, 27);
+}
+
+.resume_information h3 {
+    margin: 0 20px;
+    margin-top: 20px;
+    color: white;
+    font-size: 17px;
+}
+
+.resume_information h2 {
+    margin: 20px 40px;
+    color: white;
+    font-size: 14px;
+}
+
+.resume_experience,
+.resume_skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.resume_description p {
+    margin: 10px 50px;
+}
+
+.resume_skills {
+    
+}
+
 /* PROJECT PAGE */
 .project_list {
     display: grid;
@@ -296,6 +317,7 @@ main {
 .project_item {
     background-color: rgb(18, 16, 27);
     border: 1px solid rgb(51, 51, 51);
+    box-shadow: 1px 1px 10px black;
     color: white;
     border-radius: 8px;
     overflow: hidden;
@@ -348,6 +370,8 @@ main {
 
 .quiz_card {
     background-color: rgb(18, 16, 27);
+    border: 1px solid rgb(51, 51, 51);
+    box-shadow: 1px 1px 10px black;
     color: white;
     border-radius: 8px;
     overflow: hidden;
@@ -598,9 +622,15 @@ footer {
         justify-content: center;
     }
 
-    .information p {
+    .information p,
+    .resume_information h2,
+    .resume_description {
         color: rgb(172, 172, 172);
         font-size: 12px;
+    }
+
+    .resume_information h3 {
+        font-size: 14px;
     }
 
     .about_exp {
@@ -612,4 +642,11 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         margin: 30px 0;
     }
+
+    .resume_experience,
+    .resume_skills {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
 }
