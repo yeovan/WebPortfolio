@@ -18,7 +18,7 @@ function handleSwipe() {
   const swipeDistance = touchendX - touchstartX;
 
   // Small tolerance so small touches don't trigger
-  if (Math.abs(swipeDistance) < 100) return;
+  if (Math.abs(swipeDistance) < 70) return;
 
   const currentPage = window.location.pathname.split("/").pop(); // gets 'about.html', etc.
 
