@@ -22,7 +22,7 @@ function handleSwipe() {
 
   const currentPage = window.location.pathname.split("/").pop(); // gets 'about.html', etc.
 
-  if (swipeDistance < 0) {
+  if (swipeDistance < 50) {
     // Swiped Left
     switch(currentPage) {
       case "about.html":
