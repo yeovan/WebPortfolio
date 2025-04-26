@@ -283,7 +283,7 @@ main {
     margin: 0 20px;
     margin-top: 20px;
     color: white;
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .resume_information h2 {
@@ -303,7 +303,7 @@ main {
 }
 
 .resume_skills {
-    
+    margin-bottom: 30px;
 }
 
 /* PROJECT PAGE */
@@ -383,7 +383,7 @@ main {
 
 .quiz_card:hover {
     transform: scale(1.04);
-    border: 1px solid rgb(51, 51, 51);
+    border: 1px solid gray;
 }
 
 .quiz_card img {
@@ -409,6 +409,19 @@ main {
 .resume_image {
     margin: 20px 50px;
 
+}
+
+/* skills rating */
+.stars {
+    margin: 0 60px;
+    opacity: 70%;
+}
+
+.star.filled {
+    color: white;
+}
+.star.unfilled {
+    color: gray;
 }
 
 /* FOOTER SECTION */
@@ -623,7 +636,6 @@ footer {
     }
 
     .information p,
-    .resume_information h2,
     .resume_description {
         color: rgb(172, 172, 172);
         font-size: 12px;
