@@ -18,11 +18,11 @@ function handleSwipe() {
   const swipeDistance = touchendX - touchstartX;
 
   // Small tolerance so small touches don't trigger
-  if (Math.abs(swipeDistance) < 300) return;
+  if (Math.abs(swipeDistance) < 500) return;
 
   const currentPage = window.location.pathname.split("/").pop(); // gets 'about.html', etc.
 
-  if (swipeDistance < 50) {
+  if (swipeDistance < 0) {
     // Swiped Left
     switch(currentPage) {
       case "about.html":
