@@ -3,46 +3,54 @@
 let touchstartX = 0;
 let touchendX = 0;
 
-  const header = document.getElementById('swipe');
+const header = document.getElementById('swipe');
 
-  header.addEventListener('touchstart', function(event) {
-    touchstartX = event.changedTouches[0].screenX;
-  }, false);
+header.addEventListener('touchstart', function(event) {
+  touchstartX = event.changedTouches[0].screenX;
+}, false);
 
-  header.addEventListener('touchend', function(event) {
-    touchendX = event.changedTouches[0].screenX;
-    handleSwipe();
-  }, false);
+header.addEventListener('touchend', function(event) {
+  touchendX = event.changedTouches[0].screenX;
+  handleSwipe();
+}, false);
 
-  function handleSwipe() {
-    const swipeDistance = touchendX - touchstartX;
+function handleSwipe() {
+  const swipeDistance = touchendX - touchstartX;
 
-    // SWIPED LEFT
-    if (swipeDistance < -10) {
-      // Swiped left
-      window.location.href = "about.html";
-    }
-        else if (swipeDistance < -20) {
-        // Swiped left
+  // Small tolerance so small touches don't trigger
+  if (Math.abs(swipeDistance) < 30) return;
+
+  const currentPage = window.location.pathname.split("/").pop(); // gets 'about.html', etc.
+
+  if (swipeDistance < 0) {
+    // Swiped Left
+    switch(currentPage) {
+      case "about.html":
         window.location.href = "project.html";
-        }
-        else if (swipeDistance < -30) {
-            // Swiped left
-            window.location.href = "quiz.html";
-        }
-
-
-    // SWIPED RIGHT 
-    else if (swipeDistance > 10) {
-      // Swiped right
-      window.location.href = "project.html";
-    }
-    else if (swipeDistance > 20) {
-        // Swiped right
+        break;
+      case "project.html":
         window.location.href = "quiz.html";
+        break;
+      case "quiz.html":
+        window.location.href = "contact.html";
+        break;
+      default:
+        window.location.href = "about.html";
     }
-    else if (swipeDistance > 30) {
-        // Swiped right
+  } else {
+    // Swiped Right
+    switch(currentPage) {
+      case "project.html":
+        window.location.href = "about.html";
+        break;
+      case "quiz.html":
+        window.location.href = "project.html";
+        break;
+      case "contact.html":
+        window.location.href = "quiz.html";
+        break;
+      default:
         window.location.href = "contact.html";
     }
   }
+}
