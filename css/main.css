@@ -212,6 +212,10 @@ main {
 }
 
 /* buttons */
+.buttons {
+    margin-top: 20px;
+}
+
 .buttons button {
     padding: 10px 30px;
     border-radius: 7px;
@@ -643,7 +647,7 @@ footer {
     }
 
     .buttons {
-        padding: 10px;
+        margin: 20px;
     }
 
     .buttons button {
