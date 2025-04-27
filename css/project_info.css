@@ -237,6 +237,10 @@ main {
     max-height: 350px;
 }
 
+.buttons {
+    margin: 20px 0;
+}
+
 .buttons button {
     padding: 10px 30px;
     border-radius: 7px;
