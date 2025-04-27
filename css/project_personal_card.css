@@ -1,0 +1,488 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    background-color: rgb(18, 16, 27);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* border line */
+.border-line-side-profile {
+    border-bottom: 1px solid rgb(49, 49, 49);
+    padding-bottom: 20px;
+}
+
+.border-line-information {
+    border-bottom: 1px solid rgb(49, 49, 49);
+    padding-bottom: 20px;
+}
+
+
+/* profile (left side) */
+.left_profile {
+    top: 0;
+    left: 0;
+    position: sticky;
+    width: 300px;
+    height: 300px;
+    width: 20%;
+    height: 100%;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+/* button profile */
+.button_myName {
+    margin-top: 20px;    
+}
+
+.button_myName button {
+    padding: 10px 0;
+    border-radius: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+    width: 100%;
+    background-color: rgb(18, 16, 27);
+    color: rgb(170, 170, 170);
+    border: 1px solid rgb(51, 51, 51);
+}
+
+.button_myName button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* profile */
+.profile_image img {
+    max-height: 250px;
+}
+
+.myName {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.myName p{
+    color: gray;
+}
+
+.myName .profile_bio {
+    padding-top: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+.profile_information p{
+    color: gray;
+    font-size: 14px;
+}
+
+/* socials */
+.profile_contact h1 {
+    margin: 15px 0;
+    font-size: 14px;
+    color: white;
+}
+
+.social-icons-left-profile {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+
+}
+
+.social-icons-left-profile a {
+    height: 30px;
+    color: gray;
+    cursor: pointer;
+}
+
+
+/* right side (informations) */
+.right_information {
+    width: 60%;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+/* header */
+.right_information header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(18, 16, 27);
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border-bottom: 1px solid rgb(49, 49, 49);
+    z-index: 1000;
+}
+
+.right_information ul {
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.right_information li {
+    padding: 10px;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+}
+
+.right_information li:hover {
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+}
+
+.right_information a {
+    color: white;
+    text-decoration: none;
+}
+
+.right_information a:hover {
+    color: gray;
+}
+
+.right_information .title {
+    font-size: 15px;
+    margin: 30px 0;
+}
+
+.information {
+    border: 1px solid rgb(49, 49, 49);
+    padding: 30px 40px;
+    background-color: rgb(7, 6, 10);
+}
+
+.header_image {
+    text-align: center;
+}
+
+.header_image img {
+    max-height: 60px;
+    object-fit: cover;
+}
+
+.information h1 {
+    color: white;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.information span {
+    color: blue;
+}
+
+.information p {
+    color: gray;
+    margin: 20px 0;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* hero section */
+.hero_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+.hero_text {
+    color: rgba(255, 238, 0, 0.651);
+}
+
+/* PROJECT SECTION */
+.project {
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project_image img {
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.project_details {
+    margin: 50px 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.project_details p {
+    text-align: start;
+    max-width: 700px;
+}
+
+.project_details img {
+    margin: 0 50px;
+    max-width: 350px;
+    max-height: 350px;
+    border: 1px solid rgb(51, 51, 51);
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 30px;
+    border-radius: 7px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: black;
+    color: rgb(170, 170, 170);
+    border: 1px solid rgb(51, 51, 51);
+    font-style: italic;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* FOOTER SECTION */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 20px;
+    padding-top: 50px;
+    background: rgb(18, 16, 27);
+    color: #e1d4c2;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.social-icons a:hover {
+    background: white;
+    color: black;
+    transform: scale(1.09);
+}
+
+.footer-text {
+    font-size: 12px;
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    display: block;
+    margin: 50px auto;
+    max-height: 100px;
+}
+
+/* Fade animation keyframes */
+@keyframes fadeInScroll {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes fadeOutScroll {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/* Hidden by default */
+.scroll-fade {
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(20px);
+}
+
+/* Trigger fade-in */
+.scroll-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .left_profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profile_image img{
+        height: 150px;
+    }
+
+    .profile_information p {
+        font-size: 12px;
+    }
+
+    .social-icons-left-profile {
+        justify-content: center;
+    }
+
+    .right_information {
+        padding: 20px;
+    }
+
+    .information {
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .information h1 {
+        font-size: 14px;
+    }
+
+    .information span {
+        font-size: 14px;
+    }
+
+    .right_information ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .right_information li {
+        font-size: 9px;
+    }
+
+    .right_information .title {
+        font-size: 12px;
+    }
+
+    .buttons {
+        margin: 20px;
+    }
+
+    .buttons button {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .left_profile {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+        margin-right: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .myName {
+        font-size: 12px;
+    }
+
+    .myName .profile_bio {
+        font-size: 12px;
+    }
+
+    .button_myName button {
+        font-size: 12px;
+    }
+
+    .social-icons-left-profile {
+        justify-content: center;
+    }
+
+    .right_information {
+        width: 100%;
+        z-index: 1000%;
+    }
+
+    .right_information ul {
+        justify-content: center;
+    }
+
+    .information p {
+        color: rgb(172, 172, 172);
+        font-size: 12px;
+    }
+
+    .profile_container {
+        grid-template-columns: 1fr;
+    }
+
+    .project {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .project img {
+        max-height: 100px;
+    }
+
+    .project_details {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .project_details img{
+        max-height: 140px;
+        margin: 30px;
+    }
+
+    .project_details p {
+        text-align: center;
+        font-size: 12px;
+    }
+
+}
