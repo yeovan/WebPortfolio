@@ -68,7 +68,6 @@ main {
 /* profile */
 .profile_image img {
     max-height: 250px;
-    border-radius: 100%;
 }
 
 .myName {
@@ -187,11 +186,6 @@ main {
     color: blue;
 }
 
-.information .resume_view {
-    color: gray;
-    text-transform: uppercase;
-}
-
 .information p {
     color: gray;
     margin: 20px 0;
@@ -211,7 +205,39 @@ main {
     color: rgba(255, 238, 0, 0.651);
 }
 
-/* buttons */
+/* PROJECT SECTION */
+.project {
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.project_image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.project_details {
+    margin: 50px 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.project_details p {
+    text-align: start;
+    max-width: 700px;
+}
+
+.project_details img {
+    margin: 0 50px;
+    max-width: 350px;
+    max-height: 350px;
+    border: 1px solid rgb(51, 51, 51);
+}
+
 .buttons {
     margin-top: 20px;
 }
@@ -232,260 +258,6 @@ main {
     color: black;
     border: 1px solid black;
 }
-
-/* about experience */
-.about_exp {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    padding: 30px 0;
-}
-
-.about_exp img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.about_exp div{
-    display: grid;
-    justify-content: space-evenly;
-    margin: 20px;
-    background-color: rgb(18, 16, 27);
-    transition: all 0.3s;
-    border: 1px solid rgb(51, 51, 51);
-}
-
-.about_exp div:hover {
-    transform: scale(1.05);
-}
-
-/* skill set logo */
-.skill_set {
-    display: flex;
-    justify-content: flex-start;
-    gap: 15px;
-}
-
-.skill_set img {
-    max-height: 40px;
-    max-width: 40px;
-    border-radius: 10px;
-    border-bottom: 3px solid gray;
-    object-fit: cover;
-    aspect-ratio: 1/1;
-    padding: 5px;
-}
-
-/* resume section */
-.resume_container {
-    background-color: rgb(18, 16, 27);
-    border: 1px solid gray;
-    height: auto;
-    margin: 20px 0;
-}
-
-.resume_information h3 {
-    margin: 0 20px;
-    margin-top: 20px;
-    color: white;
-    font-size: 14px;
-}
-
-.resume_information h2 {
-    margin: 20px 40px;
-    color: white;
-    font-size: 14px;
-}
-
-.resume_experience,
-.resume_skills {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.resume_description p {
-    margin: 10px 50px;
-}
-
-.resume_skills {
-    margin-bottom: 30px;
-}
-
-/* skills rating */
-.stars {
-    margin: 0 60px;
-    opacity: 70%;
-}
-
-.star.filled {
-    color: white;
-}
-.star.unfilled {
-    color: gray;
-}
-
-/* PROJECT PAGE */
-.project_list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    padding: 10px;
-}
-
-.project_item {
-    background-color: rgb(18, 16, 27);
-    border: 1px solid rgb(51, 51, 51);
-    box-shadow: 1px 1px 10px black;
-    color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.project_item:hover {
-    transform: scale(1.04);
-    border: 1px solid gray;
-}
-
-.project_item img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-.list_description {
-    padding: 0 20px;
-    font-size: 12px;
-    line-height: 1.4;
-    flex-grow: 1;
-}
-
-.project_item button {
-    padding: 20px 30px;
-    margin-bottom: 20px 50px;
-    transition: all 0.3s;
-    cursor: pointer;
-    background-color: rgb(18, 16, 27);
-    color: rgb(170, 170, 170);
-    border: 0 solid rgb(85, 85, 85);
-}
-
-.project_item button:hover {
-    color: white;
-    border: 0px solid black;
-}
-
-/* QUIZ SECTION */
-.quiz_container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 10px;
-}
-
-.quiz_card {
-    background-color: rgb(18, 16, 27);
-    border: 1px solid rgb(51, 51, 51);
-    box-shadow: 1px 1px 10px black;
-    color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.quiz_card:hover {
-    transform: scale(1.04);
-    border: 1px solid gray;
-}
-
-.quiz_card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.quiz_name {
-    text-align: center;
-    font-size: 12px;
-}
-
-.quiz_name p{
-    padding: 20px;
-    
-    line-height: 1.4;
-    flex-grow: 1;
-}
-
-/* MODAL STYLING */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(5px);
-}
-
-.modal-content {
-    background-color: rgb(18, 16, 27);
-    margin: 10% auto;
-    padding: 20px;
-    border: 1px solid rgb(51, 51, 51);
-    width: 90%;
-    max-width: 500px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px black;
-    position: relative;
-    text-align: center;
-    color: white;
-    animation: fadeIn 0.4s ease;
-}
-
-.modal-content img.modal-image {
-    width: 100%;
-    height: 450px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    object-fit: cover;
-}
-
-.modal-title {
-    font-size: 12px;
-    font-weight: 600;
-}
-
-.close-button {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.close-button:hover {
-    color: gray;
-}
-
-/* Fade-in animation */
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
 
 /* FOOTER SECTION */
 footer {
@@ -632,25 +404,6 @@ footer {
         font-size: 12px;
     }
 
-    .about_exp {
-        grid-template-columns: 1fr;
-    }
-
-    .project_list,
-    .quiz_container {
-        grid-template-columns: 1fr;
-    }
-
-    .skill_set {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .skill_set img {
-        max-width: 30px;
-        max-height: 30px;
-    }
-
     .buttons {
         margin: 20px;
     }
@@ -698,30 +451,37 @@ footer {
         justify-content: center;
     }
 
-    .information p,
-    .resume_description {
+    .information p {
         color: rgb(172, 172, 172);
         font-size: 12px;
     }
 
-    .resume_information h3 {
-        font-size: 14px;
+    .profile_container {
+        grid-template-columns: 1fr;
     }
 
-    .about_exp {
-        grid-template-columns: repeat(1, 1fr);
+    .project {
+        flex-direction: column;
+        margin: 0;
     }
 
-    .project_list,
-    .quiz_container {
-        grid-template-columns: repeat(1, 1fr);
-        margin: 30px 0;
+    .project img {
+        max-height: 100px;
     }
 
-    .resume_experience,
-    .resume_skills {
-        grid-template-columns: repeat(1, 1fr);
+    .project_details {
+        flex-direction: column;
+        margin: 0;
     }
 
+    .project_details img{
+        max-height: 140px;
+        margin: 30px;
+    }
+
+    .project_details p {
+        text-align: center;
+        font-size: 12px;
+    }
 
 }

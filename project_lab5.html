@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/project_lab5.css">
 
     <!-- SOCIALS LOGO LINK -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -76,7 +76,7 @@
                 <nav>
                     <ul>
                         <li><a href="about.html"><i class="fa-solid fa-person"></i> About Me</a></li>
-                        <li><a href="#project"><i class="fa-solid fa-keyboard"></i> Projects</a></li>
+                        <li><a href="project.html"><i class="fa-solid fa-keyboard"></i> Projects</a></li>
                         <li><a href="quiz.html"><i class="fa-solid fa-newspaper"></i> Quizzes</a></li>
                         <li><a href="contact.html"><i class="fa-solid fa-address-book"></i> Contact Me</a></li>
                     </ul>
@@ -90,107 +90,117 @@
                 <div>
                     <h1 class="scroll-fade">Here are my recent <span> Projects</span> and <span>Activities</span></h1>
 
+                    <div class="buttons">
+                        <button target="_blank" onclick="location.href='project.html';" class="scroll-fade">Back</button>
+                    </div>
                     <div class="border-line-information"></div>
                 </div>
                 
                 <!-- PROJECTS SECTION -->
                 <div class="project_container">
-                    <div class="project_description">
-                        <h1 class="title scroll-fade">Recent Projects & Activities</h1>
+                    <div class="project_description scroll-fade">
+                        <h1 class="title scroll-fade">Laboratory 5 | Guess My Birthday Game</h1>
                     </div>
-                </div>
-                    
-                <div class="project_list">            
-                    <div class="project_item">
-                        <img src="projects/lab4.png" alt="image" class="scroll-fade">
-                        <div class="border-line-side-profile"></div>
-                        <div class="list_description scroll-fade" class="scroll-fade">
-                            <br>
-                            <i class="fa-solid fa-list"></i>
-                            <p>
-                                Recent laboratory activity - Fame Residences 
-                            </p>
-        
+
+                    <div class="project_information">
+
+                        <div class="project">
+
+                            <div class="project_image scroll-fade">
+                                <img src="guess_birthday_screenshots/guess_birthday_preview.png" alt="image">
+                            </div>
+                        
                         </div>
 
-                        <button target="_blank" onclick="location.href='project_lab4.html';" class="scroll-fade">View More</button>
-                    </div>
-            
-                    <div class="project_item">
-                        <img src="projects/lab5.png" alt="image" class="scroll-fade">
                         <div class="border-line-information"></div>
-                        <div class="list_description scroll-fade">
-                            <br>
-                            <i class="fa-solid fa-list"></i>
-                            <p>
-                                Recent laboratory activity - Guest My Birthday Game
+
+                        <div class="project_details">
+                            <p class="scroll-fade">
+                                This is a Guess My Birthday Game, a game in which the computer will have
+                                to guess your number.<br><br>
+
+                                Let's say your birthday is 7, In every round out of 5 you will choose 
+                                that number.
                             </p>
                         </div>
+                        <div class="project_details">
+                            <img src="guess_birthday_screenshots/first_round.PNG" alt="img" class="scroll-fade">
 
-                        <button target="_blank" onclick="location.href='project_lab5.html';" class="scroll-fade">View More</button>
-                    </div>
-            
-                    <div class="project_item">
-                        <img src="projects/pr3.png" alt="image" class="scroll-fade">
+                            <p class="scroll-fade"> 
+                                In the first round there is number 7, so I will choose YES between yes/no. <br><br>
+                                
+                                After clicking one of the two buttons it will proceed to the next set of round which
+                                is set 2.
+                            </p>
+                        </div>
                         <div class="border-line-information"></div>
-                        <div class="list_description scroll-fade">
-                            <br>
-                            <i class="fa-solid fa-list"></i>
-                            <p>
-                                Personal profile card
+
+                        <div class="project_details">
+                            <img src="guess_birthday_screenshots/second_round.PNG" alt="img" class="scroll-fade">
+
+                            <p class="scroll-fade"> 
+                                In the second round, there is also number 7 so I will choose YES again. <br><br>
+
+                                Proceeding to set 3.
                             </p>
-        
                         </div>
 
-                        <button onclick="location.href='https://yeovan.github.io/Personal_Card/';" target="_blank" class="scroll-fade">View More</button>
-                    </div>
-
-                    <div class="project_item">
-                        <img src="projects/lab4.png" alt="image" class="scroll-fade">
                         <div class="border-line-information"></div>
-                        <div class="list_description scroll-fade">
-                            <br>
-                            <i class="fa-solid fa-list"></i>
-                            <p>
-                                Recent laboratory activity - Fame Residences 
+
+                        <div class="project_details">
+                            <img src="guess_birthday_screenshots/third_round.PNG" alt="img" class="scroll-fade">
+
+                            <p class="scroll-fade"> 
+                                This is third round, another number 7 is included in set 3 so I will choose YES.<br><br>
+
+                                Proceeding to set 4.
                             </p>
-        
                         </div>
 
-                        <button target="_blank" onclick="location.href='https://yeovan.github.io/lab4/';" class="scroll-fade">View More</button>
-                    </div>
-            
-                    <div class="project_item">
-                        <img src="projects/lab5.png" alt="image" class="scroll-fade">
                         <div class="border-line-information"></div>
-                        <div class="list_description scroll-fade">
-                            <br>
-                            <i class="fa-solid fa-list"></i>
-                            <p>
-                                Recent laboratory activity - Guest My Birthday Game
+
+                        <div class="project_details">
+                            <img src="guess_birthday_screenshots/fourth_round.PNG" alt="img" class="scroll-fade">
+
+                            <p class="scroll-fade"> 
+                                In this round, you will see that there is no number 7 so I will choose the opposite
+                                which is NO. <br><br>
+
+                                Proceeding to set 5.
                             </p>
                         </div>
 
-                        <button target="_blank" onclick="location.href='https://yeovan.github.io/lab5/';" class="scroll-fade">View More</button>
-                    </div>
-            
-                    <div class="project_item">
-                        <img src="projects/pr3.png" alt="image" class="scroll-fade">
                         <div class="border-line-information"></div>
-                        <div class="list_description scroll-fade">
-                            <br>
-                            <i class="fa-solid fa-list"></i>
-                            <p>
-                                Personal profile card
+                        
+                        <div class="project_details">
+                            <img src="guess_birthday_screenshots/fifth_round.PNG" alt="img" class="scroll-fade">
+
+                            <p class="scroll-fade"> 
+                                There is also no number 7 in this round so I will choose NO. <br><br>
+
+                                After those 5 rounds there result will show, the computer will have to guess
+                                the number 7.
                             </p>
-        
                         </div>
 
-                        <button onclick="location.href='https://yeovan.github.io/Personal_Card/';" target="_blank" class="scroll-fade">View More</button>
+                        <div class="border-line-information"></div>
+
+                        <div class="project_details">
+                            <img src="guess_birthday_screenshots/final_result.PNG" alt="img" class="scroll-fade">
+
+                            <p class="scroll-fade"> 
+                                Tada! The computer guessed it right! The number you had chosen is number 7.
+                            </p>
+                        </div>
+
+                        <div class="border-line-information"></div>
+
+                        <div class="buttons">
+                            <button target="_blank" onclick="location.href='https://yeovan.github.io/lab5/';" class="scroll-fade">Visit Link</button>
+                        </div>
+                        
                     </div>
-                    
-                </div>
-                 
+                </div>  
             </div>
 
             <div>
